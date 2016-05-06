@@ -50,10 +50,37 @@ and is wrapped around the whole page content, except for the footer in this exam
     <div class="w3-col l8">
       <div class="w3-card-4 w3-margin w3-white">
         <div class="w3-container w3-padding-hor-8 w3-center">
-          <div class="w3-right"><img src="me.jpg" alt="" /></div>
           <div class="w3-center">
           <h1><b>Work</b></h1>
           <h4><span class="w3-opacity">Photography</span></h4>
+          <div class="w3-row-padding">
+            <div class="w3-container w3-third">
+              <img src="img/pic01.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+            </div>
+              <div class="w3-container w3-third">
+                <img src="img/pic01.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+              </div>
+                <div class="w3-container w3-third">
+                  <img src="img/pic01.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                </div>
+                  <div class="w3-container w3-third">
+                    <img src="img/pic01.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                  </div>
+                    <div class="w3-container w3-third">
+                      <img src="img/pic01.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                    </div>
+                      <div class="w3-container w3-third">
+                        <img src="img/pic01.jpg" style="width:100%;cursor:pointer" onclick="onClick(this)" class="w3-hover-opacity">
+                      </div>
+                    </div>
+
+<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxlarge w3-container w3-display-topright">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom">
+    <img id="img01" style="width:100%">
+  </div>
+</div>
+
         </div>
         </div>
       </div>
@@ -99,7 +126,12 @@ document.getElementById('home').style.display = "none";
 document.getElementById('work').style.display = "none";
 document.getElementById('contact').style.display = "none";
 document.getElementById(d).style.display = "block";
-}</script>
+}
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+</script>
 
 
 </body>
