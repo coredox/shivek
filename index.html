@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<title>Shivek Sobti Photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey" background="bg.jpg">
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+  <!-- Header -->
+  <div class="w3-container w3-center w3-padding-hor-64">
+    <a href="javascript:Show('home')" class="w3-tooltip fa fa-home fa-3x w3-padding-ver-16" style="color:white;text-decoration: none;">
+      <span style="position:absolute;left:0;bottom:18px"  class="w3-text w3-tag"></span>
+    </a>
+    <a href="javascript:Show('work')" class="w3-tooltip fa fa-folder fa-3x w3-padding-ver-16 w3-opacity" style="color:white;text-decoration: none;">
+      <span style="position:absolute;left:0;bottom:18px"  class="w3-text w3-tag"></span>
+    </a>
+    <a href="javascript:Show('contact')" class="w3-tooltip fa fa-envelope fa-3x w3-padding-ver-16 w3-opacity" style="color:white;text-decoration: none;">
+      <span style="position:absolute;left:0;bottom:18px"  class="w3-text w3-tag"></span>
+    </a>
+    <a href="https://www.facebook.com/SHIVEKSOBTIPHOTOWORKS" target="_blank" class="w3-tooltip fa fa-facebook fa-3x w3-padding-ver-16 w3-opacity" style="color:white;text-decoration: none;">
+      <span style="position:absolute;left:0;bottom:18px"  class="w3-text w3-tag"></span>
+    </a>
+  </div>
+  <!-- Home -->
+  <div id="home"class="w3-row">
+    <div class="w3-col l2 w3-hide-small w3-hide-medium" style="">&nbsp;</div>
+    <div class="w3-col l8">
+      <div class="w3-card-4 w3-white">
+        <div class="w3-container w3-center">
+          <div class="w3-right"><img src="me.jpg" alt="" /></div>
+          <div class="w3-display-middle">
+          <h1><b>Shivek Sobti</b></h1>
+          <h4><span class="w3-opacity">Photographer</span></h4>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Work -->
+  <div id="work"class="w3-row" style="display:none">
+    <div class="w3-col l2 w3-hide-small w3-hide-medium" style="">&nbsp;</div>
+    <div class="w3-col l8">
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container w3-padding-hor-8 w3-center">
+          <div class="w3-right"><img src="me.jpg" alt="" /></div>
+          <div class="w3-center">
+          <h1><b>Work</b></h1>
+          <h4><span class="w3-opacity">Photography</span></h4>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact -->
+  <div id="contact"class="w3-row" style="display:none">
+    <div class="w3-col l2 w3-hide-small w3-hide-medium" style="">&nbsp;</div>
+    <div class="w3-col l8">
+      <div class="w3-card-4 w3-margin w3-white">
+        <div class="w3-container w3-padding-hor-8">
+          <form class="w3-container w3-white w3-padding-jumbo">
+            <h1>Contact Me</h1>
+            <div class="w3-group w3-half w3-padding-right">
+              <input class="w3-input w3-border-0 w3-light-grey w3-padding-hor-12" type="text" placeholder="Name">
+            </div>
+            <div class="w3-group w3-half">
+              <input class="w3-input w3-border-0 w3-light-grey w3-padding-hor-12" type="text" placeholder="Email">
+            </div>
+            <div class="w3-group">
+              <input class="w3-input w3-border-0 w3-light-grey w3-padding-hor-12" type="text" placeholder="Phone (Optional)">
+            </div>
+            <div class="w3-group">
+              <textarea rows="4" cols="50" class="w3-input w3-border-0 w3-light-grey w3-padding-hor-12" type="text" placeholder="Message"></textarea>
+            </div>
+            <div class="w3-group">
+            <button type="button" class="w3-btn w3-theme w3-padding-large">Send Message</button>
+          </div>
+          </div>
+
+      </form>
+        </div>
+      </div>
+    </div>
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+<script type="text/javascript" language="JavaScript">
+function Show(d) {
+document.getElementById('home').style.display = "none";
+document.getElementById('work').style.display = "none";
+document.getElementById('contact').style.display = "none";
+document.getElementById(d).style.display = "block";
+}</script>
+
+
+</body>
+</html>
